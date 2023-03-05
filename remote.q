@@ -32,10 +32,10 @@
     ];
 
     // hopen to those disconnected process
-    isFocus: exec any .R.focus =\: id from .remote.connInfo;
+    isFocus: $[0<=type .R.focus;any;] exec .R.focus =\: id from .remote.connInfo;
     update handle:@[hopen; ;{0Ni}]each(address ,' username ,' password) from `.remote.connInfo where isFocus, null handle;
 
-    // select from .remote.connInfo where $[0<=type .R.focus; in; =][id; .R.focus]
-    (exec handle from .remote.connInfo where isFocus, not null handle)@\:(value;x)
+    // send query to each of the focused processes
+    (exec handle from .remote.connInfo where isFocus, not null handle)@\:x
  }
 .R.e: {.R.val x}
