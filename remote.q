@@ -36,6 +36,6 @@
     update handle:@[hopen; ;{0Ni}]each(address ,' username ,' password) from `.remote.connInfo where isFocus, null handle;
 
     // send query to each of the focused processes
-    (exec handle from .remote.connInfo where isFocus, not null handle)@\:x
+    raze (exec handle from .remote.connInfo where isFocus, not null handle)@\:x
  }
 .R.e: {.R.val x}
