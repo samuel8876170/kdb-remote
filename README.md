@@ -5,9 +5,11 @@ Library to remote control q/kdb+ processes
 
 ## Table of Contents
 
--   [Features](#features)
--   [Installation](#installation)
--   [Execution](#execution)
+- [kdb-remote](#kdb-remote)
+  - [Table of Contents](#table-of-contents)
+    - [Features](#features)
+    - [Installation](#installation)
+    - [Execution](#execution)
 
 </br>
 
@@ -17,6 +19,7 @@ Library to remote control q/kdb+ processes
     - i.e. It is not possible to open up its terminal and run the code directly
 2. Execute same code to multiple q processes
     - No need to open the terminal for each process and run the code one by one
+3. Catch error message in remote q processes and show in result
 
 ### Installation
 
