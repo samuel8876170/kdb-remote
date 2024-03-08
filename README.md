@@ -23,18 +23,10 @@ Library to remote control q/kdb+ processes
 
 ### Installation
 
--   Method 1:
-    -   Simply download this repository:
+-   Download this repository:
 
 ```
 git clone https://github.com/samuel8876170/kdb-remote.git
-```
-
--   Method 2:
-    -   Use [QPL](https://github.com/samuel8876170/qpl.git) to download it
-
-```
-        //TODO
 ```
 
 ### Execution
@@ -43,12 +35,6 @@ git clone https://github.com/samuel8876170/kdb-remote.git
 
 ```q
 q) \l remote.q
-```
-
-or using [QPL](https://github.com/samuel8876170/qpl.git)
-
-```q
-q) .pl.import`kdbRemote
 ```
 
 2. Execute code on local process
